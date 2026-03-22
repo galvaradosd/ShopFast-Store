@@ -73,8 +73,19 @@ ShopFast Store is a Single Page Application (SPA) that allows users to browse a 
 
 3. **Configure Firebase:**
    - Create a Firebase project and Firestore database.
-   - Update `/src/firebase/config.js` with your Firebase configuration.
-   - **Important:** Never commit your private Firebase credentials to a public repository.
+   - Copy the file `.env.example` to `.env` in the root of your project.
+   - Fill in your Firebase credentials in the `.env` file. Example:
+     ```
+     VITE_FIREBASE_API_KEY=your-api-key
+     VITE_FIREBASE_AUTH_DOMAIN=your-auth-domain
+     VITE_FIREBASE_PROJECT_ID=your-project-id
+     VITE_FIREBASE_STORAGE_BUCKET=your-storage-bucket
+     VITE_FIREBASE_MESSAGING_SENDER_ID=your-messaging-sender-id
+     VITE_FIREBASE_APP_ID=your-app-id
+     VITE_FIREBASE_MEASUREMENT_ID=your-measurement-id
+     ```
+   - The app will automatically use these environment variables for Firebase configuration.
+   - **Important:** Never commit your `.env` file with real credentials to a public repository. Only share `.env.example`.
 
 ### Running the Application
 
@@ -109,6 +120,22 @@ bun run lint
 ```
 
 ---
+
+## Environment Variables
+
+- All Firebase credentials are loaded from environment variables defined in a `.env` file at the project root.
+- The file `.env.example` is provided as a template. Copy it to `.env` and fill in your own Firebase project credentials.
+- **Never commit your `.env` file with real credentials to any public repository.**
+- Example `.env` content:
+  ```
+  VITE_FIREBASE_API_KEY=your-api-key
+  VITE_FIREBASE_AUTH_DOMAIN=your-auth-domain
+  VITE_FIREBASE_PROJECT_ID=your-project-id
+  VITE_FIREBASE_STORAGE_BUCKET=your-storage-bucket
+  VITE_FIREBASE_MESSAGING_SENDER_ID=your-messaging-sender-id
+  VITE_FIREBASE_APP_ID=your-app-id
+  VITE_FIREBASE_MEASUREMENT_ID=your-measurement-id
+  ```
 
 ## Project Structure
 
