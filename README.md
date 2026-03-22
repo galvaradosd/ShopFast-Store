@@ -1,53 +1,32 @@
 # ShopFast Store – E-commerce SPA (Coderhouse React JS Final Project)
 
-This repository contains the final integrative project for the React JS course at Coderhouse. The goal is to develop the front-end of a modern e-commerce web application using React, applying all the core concepts and best practices learned throughout the course.
+This is the final project for the React JS course at Coderhouse. It’s a modern e-commerce Single Page Application (SPA) built with React, Vite, and Firebase Firestore, demonstrating componentization, state management, routing, and real-world integrations.
 
 ---
 
-## Project Overview
-
-ShopFast Store is a Single Page Application (SPA) that allows users to browse a product catalog, view product details, manage their shopping cart, and complete purchases—all without reloading the browser. The project demonstrates advanced React techniques, modular architecture, and real-world integrations.
-
----
-
-## Objectives
-
-- Build a complete e-commerce front-end using React.
-- Implement SPA navigation with React Router.
-- Apply componentization and modular interface architecture.
-- Manage global state (cart, theme, etc.) using React Hooks and Context API.
-- Integrate Firestore (Firebase) as the database for products and orders.
-- Implement dynamic rendering and conditional UI states.
-- Provide a seamless and interactive user experience.
-- Support internationalization (English/Spanish).
-- Support light and dark themes with persistent user preference.
-
----
-
-## Key Features
+## Features
 
 - **SPA Navigation:** Fast, client-side routing with React Router.
-- **Product Catalog:** Dynamic product listing fetched from Firestore.
-- **Product Details:** Detailed view for each product, including stock status.
-- **Shopping Cart:** Add, remove, and update products in the cart; cart state managed globally with React Context and persisted in localStorage.
-- **Checkout Flow:** Complete purchase process with order confirmation.
-- **Conditional Rendering:** UI adapts to loading states, out-of-stock products, empty cart, and purchase confirmation.
-- **Responsive Design:** Optimized for desktop and mobile devices.
-- **Theme Support:** Light and dark mode toggle, with preference saved in localStorage.
-- **Internationalization:** Language switching (English/Spanish) with i18next.
+- **Product Catalog & Details:** Dynamic product listing and detail views from Firestore.
+- **Shopping Cart:** Global state with React Context, persisted in localStorage.
+- **Checkout Flow:** Complete purchase process with order confirmation (orders saved in Firestore).
+- **Conditional Rendering:** Handles loading, out-of-stock, empty cart, and purchase confirmation states.
+- **Responsive Design:** Optimized for desktop and mobile.
+- **Theme Support:** Light/dark mode toggle, preference saved in localStorage.
+- **Internationalization:** English/Spanish support with i18next.
 
 ---
 
-## Technologies Used
+## Technologies
 
-- **React** (with Hooks)
-- **React Router**
-- **React Context API**
-- **Firebase Firestore**
-- **i18next** (for internationalization)
-- **Vite** (for fast development and build)
-- **ESLint** (for code quality)
-- **Bun** (as the package manager and script runner)
+- React (with Hooks)
+- React Router
+- React Context API
+- Firebase Firestore
+- i18next
+- Vite
+- ESLint
+- Bun (as package manager and script runner)
 
 ---
 
@@ -55,10 +34,10 @@ ShopFast Store is a Single Page Application (SPA) that allows users to browse a 
 
 ### Prerequisites
 
-- [Bun](https://bun.sh/) (version 1.0 or higher recommended)
-- [Node.js](https://nodejs.org/) (for compatibility, but Bun is required for scripts)
+- [Bun](https://bun.sh/) (recommended)
+- [Node.js](https://nodejs.org/) (for compatibility)
 
-### Installation
+### Installation & Setup
 
 1. **Clone the repository:**
    ```sh
@@ -66,54 +45,34 @@ ShopFast Store is a Single Page Application (SPA) that allows users to browse a 
    cd your-repo
    ```
 
-2. **Install dependencies with Bun:**
+2. **Install dependencies:**
    ```sh
    bun install
    ```
 
-3. **Configure Firebase:**
-   - Create a Firebase project and Firestore database.
-   - Copy the file `.env.example` to `.env` in the root of your project.
-   - Fill in your Firebase credentials in the `.env` file. Example:
-     ```
-     VITE_FIREBASE_API_KEY=your-api-key
-     VITE_FIREBASE_AUTH_DOMAIN=your-auth-domain
-     VITE_FIREBASE_PROJECT_ID=your-project-id
-     VITE_FIREBASE_STORAGE_BUCKET=your-storage-bucket
-     VITE_FIREBASE_MESSAGING_SENDER_ID=your-messaging-sender-id
-     VITE_FIREBASE_APP_ID=your-app-id
-     VITE_FIREBASE_MEASUREMENT_ID=your-measurement-id
-     ```
-   - The app will automatically use these environment variables for Firebase configuration.
-   - **Important:** Never commit your `.env` file with real credentials to a public repository. Only share `.env.example`.
+3. **Environment variables:**
+   - Copy `.env.example` to `.env` in the project root.
+   - The `.env.example` file already contains demo Firebase credentials for this project.  
+     No further setup is needed for educational/demo use.
 
-### Running the Application
-
-Start the development server with Bun:
+### Running the App
 
 ```sh
 bun run dev
 ```
-
-Open your browser at the URL shown in the terminal (usually [http://localhost:5173](http://localhost:5173)).
+Open [http://localhost:5173](http://localhost:5173) in your browser.
 
 ### Building for Production
-
-To create an optimized production build:
 
 ```sh
 bun run build
 ```
-
-Preview the production build locally:
-
+Preview the production build:
 ```sh
 bun run preview
 ```
 
 ### Linting
-
-To check code quality with ESLint:
 
 ```sh
 bun run lint
@@ -121,32 +80,16 @@ bun run lint
 
 ---
 
-## Environment Variables
-
-- All Firebase credentials are loaded from environment variables defined in a `.env` file at the project root.
-- The file `.env.example` is provided as a template. Copy it to `.env` and fill in your own Firebase project credentials.
-- **Never commit your `.env` file with real credentials to any public repository.**
-- Example `.env` content:
-  ```
-  VITE_FIREBASE_API_KEY=your-api-key
-  VITE_FIREBASE_AUTH_DOMAIN=your-auth-domain
-  VITE_FIREBASE_PROJECT_ID=your-project-id
-  VITE_FIREBASE_STORAGE_BUCKET=your-storage-bucket
-  VITE_FIREBASE_MESSAGING_SENDER_ID=your-messaging-sender-id
-  VITE_FIREBASE_APP_ID=your-app-id
-  VITE_FIREBASE_MEASUREMENT_ID=your-measurement-id
-  ```
-
 ## Project Structure
 
 ```
 src/
   assets/         # Images and static assets
-  components/     # React components (NavBar, Cart, ProductList, etc.)
+  components/     # React components
   context/        # React Context providers (Cart, Theme, etc.)
-  firebase/       # Firebase configuration and Firestore services
+  firebase/       # Firebase config and Firestore services
   i18n/           # Internationalization setup and translations
-  App.jsx         # Main application component
+  App.jsx         # Main app component
   main.jsx        # Entry point
 ```
 
@@ -154,12 +97,11 @@ src/
 
 ## Notes
 
-- The cart state is managed globally using React Context, allowing access from any component without prop drilling, and is persisted in localStorage.
-- Product data and orders are stored and retrieved from Firebase Firestore.
-- The UI responds to various states: loading, out of stock, empty cart, and purchase confirmation.
-- The project is for educational purposes as part of the Coderhouse React JS course.
-- **Bun** is used as the package manager and script runner. If you are unfamiliar with Bun, see [the official documentation](https://bun.sh/docs/cli/install) for installation instructions.
-- If you wish to use npm or yarn instead, you must manually generate the appropriate lockfile and ensure compatibility.
+- The cart state is managed globally with React Context and persisted in localStorage.
+- Product data and orders are stored in Firebase Firestore.
+- The app is for educational/demo purposes only.
+- **Bun** is used as the package manager. See [Bun docs](https://bun.sh/docs/cli/install) if you’re new to it.
+- If you want to use npm or yarn, you must generate the appropriate lockfile and ensure compatibility.
 
 ---
 
@@ -170,3 +112,10 @@ This project is for educational use and is not intended for commercial deploymen
 ---
 
 **Developed as the Final Project for the React JS Course at [Coderhouse](https://www.coderhouse.com/).**
+
+---
+
+> **Best Practice Reminder:**  
+> Never commit your `.env` file with real credentials to any public repository.  
+> Always use `.env.example` to share environment variable templates or demo credentials.  
+> This keeps your project secure, professional, and easy for others to set up.
