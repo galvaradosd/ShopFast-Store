@@ -1,0 +1,74 @@
+{
+  "nav": {
+    "technology": "Tecnología",
+    "clothing": "Ropa",
+    "home": "Hogar",
+    "changeTheme": "Cambiar tema",
+    "changeLanguage": "Cambiar idioma"
+  },
+  "catalog": {
+    "featured": "Productos Destacados",
+    "selected": "Categoría Seleccionada",
+    "loading": "Cargando productos...",
+    "empty": "No hay productos disponibles.",
+    "category": "Categoría: {{categoryId}}",
+    "subtitle": "Tecnología seleccionada para vos."
+  },
+  "item": {
+    "stock": "Stock: {{count}}",
+    "noStock": "Sin stock",
+    "viewDetail": "Ver detalle"
+  },
+  "detail": {
+    "stock": "Stock disponible: {{count}}",
+    "noStock": "Sin stock",
+    "addToCart": "Agregar al carrito",
+    "unavailable": "No disponible",
+    "keepShopping": "Seguir comprando"
+  },
+  "cart": {
+    "title": "Carrito",
+    "empty": "Tu carrito está vacío",
+    "goToCatalog": "Ir al catálogo",
+    "price": "Precio: ${{value}}",
+    "subtotal": "Subtotal: ${{value}}",
+    "items": "Items: {{count}}",
+    "total": "Total a pagar: ${{value}}",
+    "remove": "Eliminar",
+    "clear": "Vaciar carrito",
+    "checkout": "Finalizar compra"
+  },
+  "checkout": {
+    "title": "Checkout",
+    "empty": "Tu carrito está vacío.",
+    "goToCatalog": "Ir al catálogo",
+    "name": "Nombre y apellido",
+    "namePlaceholder": "Juan Pérez",
+    "phone": "Teléfono",
+    "phonePlaceholder": "+54 11 1234-5678",
+    "email": "Email",
+    "emailPlaceholder": "juan@email.com",
+    "confirmEmail": "Confirmar email",
+    "items": "Items: {{count}}",
+    "total": "Total a pagar: ${{value}}",
+    "back": "Volver al carrito",
+    "confirm": "Confirmar compra",
+    "processing": "Procesando...",
+    "errors": {
+      "name": "Ingresá tu nombre.",
+      "phone": "Ingresá tu teléfono.",
+      "email": "Ingresá tu email.",
+      "emailInvalid": "El email no es válido.",
+      "confirmEmail": "Confirmá tu email.",
+      "emailMismatch": "Los emails no coinciden.",
+      "submit": "No pudimos generar la orden. Intentá nuevamente."
+    }
+  },
+  "order": {
+    "title": "¡Compra confirmada!",
+    "subtitle": "Gracias por tu compra. Tu pedido fue generado correctamente.",
+    "idLabel": "ID de orden",
+    "backHome": "Volver al inicio",
+    "keepShopping": "Seguir comprando"
+  }
+}

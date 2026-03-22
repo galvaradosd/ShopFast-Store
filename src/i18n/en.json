@@ -1,0 +1,74 @@
+{
+  "nav": {
+    "technology": "Technology",
+    "clothing": "Clothing",
+    "home": "Home",
+    "changeTheme": "Change theme",
+    "changeLanguage": "Change language"
+  },
+  "catalog": {
+    "featured": "Featured Products",
+    "selected": "Selected Category",
+    "loading": "Loading products...",
+    "empty": "No products available.",
+    "category": "Category: {{categoryId}}",
+    "subtitle": "Technology selected for you."
+  },
+  "item": {
+    "stock": "Stock: {{count}}",
+    "noStock": "Out of stock",
+    "viewDetail": "View detail"
+  },
+  "detail": {
+    "stock": "Available stock: {{count}}",
+    "noStock": "Out of stock",
+    "addToCart": "Add to cart",
+    "unavailable": "Unavailable",
+    "keepShopping": "Keep shopping"
+  },
+  "cart": {
+    "title": "Cart",
+    "empty": "Your cart is empty",
+    "goToCatalog": "Go to catalog",
+    "price": "Price: ${{value}}",
+    "subtotal": "Subtotal: ${{value}}",
+    "items": "Items: {{count}}",
+    "total": "Total: ${{value}}",
+    "remove": "Remove",
+    "clear": "Clear cart",
+    "checkout": "Checkout"
+  },
+  "checkout": {
+    "title": "Checkout",
+    "empty": "Your cart is empty.",
+    "goToCatalog": "Go to catalog",
+    "name": "Full name",
+    "namePlaceholder": "John Doe",
+    "phone": "Phone",
+    "phonePlaceholder": "+1 234 567 8900",
+    "email": "Email",
+    "emailPlaceholder": "john@email.com",
+    "confirmEmail": "Confirm email",
+    "items": "Items: {{count}}",
+    "total": "Total: ${{value}}",
+    "back": "Back to cart",
+    "confirm": "Confirm purchase",
+    "processing": "Processing...",
+    "errors": {
+      "name": "Please enter your name.",
+      "phone": "Please enter your phone.",
+      "email": "Please enter your email.",
+      "emailInvalid": "Email is not valid.",
+      "confirmEmail": "Please confirm your email.",
+      "emailMismatch": "Emails do not match.",
+      "submit": "We couldn't place your order. Please try again."
+    }
+  },
+  "order": {
+    "title": "Purchase confirmed!",
+    "subtitle": "Thank you for your purchase. Your order was placed successfully.",
+    "idLabel": "Order ID",
+    "backHome": "Back to home",
+    "keepShopping": "Keep shopping"
+  }
+}
