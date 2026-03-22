@@ -1,5 +1,3 @@
-react-js-project/README.md
-```
 # ShopFast Store – E-commerce SPA (Coderhouse React JS Final Project)
 
 This repository contains the final integrative project for the React JS course at Coderhouse. The goal is to develop the front-end of a modern e-commerce web application using React, applying all the core concepts and best practices learned throughout the course.
